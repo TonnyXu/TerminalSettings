@@ -5,7 +5,8 @@ Personal backup for my terminal settings
 ## Content List
 
 1. `.bash_profile` + `.bashrc`
-2. `.gitcompletion` + `.gitflow.completion`
+2. `.gitcompletion` + `.gitflow.completion` + `.gitconfig` +
+   `.gitignore`
 3. Homebrew `PATH`
   * wget
   * curl
