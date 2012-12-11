@@ -1,0 +1,14 @@
+[user]
+	name = Tonny Xu
+	email = tonny.xu@gmail.com
+[color]
+	diff = true
+	status = true
+	branch = true
+	interactive = true
+[core]
+	excludesfile = /users/tonny/.gitignore
+	pager = less
+	editor = vim
+[alias]
+	st = status
