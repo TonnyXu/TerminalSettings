@@ -1,0 +1,4 @@
+color darkblue
+":set clipboard+=unamed
+
+nnoremap <Space>. :<C-u>edit $MYVIMRC<CR>
