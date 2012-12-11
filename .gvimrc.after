@@ -1,2 +1,2 @@
 color DarkBlue
-:set guifont=Monaco:h16
+:set guifont=Monaco:h12
