@@ -18,7 +18,7 @@ Personal backup for my terminal settings
   * tcptrace
   * tree
 4. vim + MacVim
-  * janus
+  * [janus](https://github.com/carlhuda/janus)
 
 ## Installation
 
