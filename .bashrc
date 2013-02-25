@@ -1,20 +1,12 @@
-#export PAGER="less"
 export PAGER="/bin/sh -c \"unset PAGER;col -b -x | \
     vim -R -c 'set ft=man nomod nolist' -c 'map q :q<CR>' \
     -c 'map <SPACE> <C-D>' -c 'map b <C-U>' \
     -c 'nmap K :Man <C-R>=expand(\\\"<cword>\\\")<CR><CR>' -\""
 export EDITOR="vim"
-# export PYTHONHOME="/Library/Frameworks/Python.framework/Versions/2.7"
-# export PYTHONPATH="/Library/Frameworks/Python.framework/Versions/2.7"
 
 # GREP_OPTIONS='--color=always' has problem with CMake, will cause CMake to fail.
 #export GREP_OPTIONS='--color=always'
 #export GREP_COLOR='01;33'
-# By setting LC_MESSAGES=C, almost all the command's output language will be english.
-#export LC_MESSAGES="en_EN.UTF-8"
-#export LANG="en_EN.UTF-8"
-#export LC_ALL="en_EN.UTF-8"
-#export PERL_BADLANG=0
 
 # This is a Shell AutoCompletion support for git.
 source ~/.git-completion.sh
@@ -46,5 +38,7 @@ export PS1='\[\e[35;40m\]\u\[\e[0m\]@\[\e[36;40m\]\h\[\e[0m\e[37;40m\]\A\[\e[0m\
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
 
 #rbenv
+if [ -d $HOME/.rbenv ]; then
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+fi
