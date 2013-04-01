@@ -45,3 +45,10 @@ if [ -d $HOME/.rbenv ]; then
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 fi
+
+if [ -d "/usr/local/heroku/bin" ]; then
+  export PATH="/usr/local/heroku/bin:$PATH"
+fi
+
+# Powerline is good for vim, but not so good for a shell
+#source /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh

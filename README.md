@@ -25,6 +25,7 @@ Personal backup for my terminal settings
 ### For Mac OSX
 
 1. `./install_all.sh`
+2. `./install_janus_vim.sh`
 
 ### For Linux
 
@@ -32,6 +33,7 @@ Personal backup for my terminal settings
 
 ## Version
 
+* Ver 0.0.3 - Apr 01, 2013 - Added powerline for vim
 * Ver 0.0.2 - Apr 01, 2013 - Added vundle support
 * Ver 0.0.1 - Dec 10, 2012 - Initial commit
 
