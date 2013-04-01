@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # 1. bash
-#exec "./install_minimum.sh"
+sh "./install_minimum.sh" > /dev/null
 
 # 2. vim
 if [ -d "${HOME}/.vim" ]; then
