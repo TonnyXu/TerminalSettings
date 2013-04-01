@@ -37,7 +37,7 @@ alias sshweb4='ssh t-xu@g6-web04.ec2'
 if [ -z "$PS1" ]; then
   return
 fi
-export PS1='\[\e[35;40m\]\u\[\e[0m\]@\[\e[36;40m\]\h\[\e[0m\e[37;40m\]\A\[\e[0m\] \[\e[36;40m\]\W$(__git_ps1 " (%s)") \[\e[0m\]: '
+export PS1='\[\e[35;40m\]\u\[\e[0m\]@\[\e[36;40m\]\h\[\e[0m\e[37;40m\]\A\[\e[0m\] \[\e[36;40m\]\W$(__git_ps1 " (%s)") \[\e[0m\]$ '
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
 
 #rbenv
