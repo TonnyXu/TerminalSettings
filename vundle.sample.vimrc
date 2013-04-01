@@ -1,7 +1,26 @@
 set nocompatible               " be iMproved
 set number
+set ruler
+set encoding=utf-8
+
 set nowrap
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set softtabstop=0
+set list
+set backspace=indent,eol,start
+
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+
+syntax enable
 filetype off                   " required!
+colorscheme candycode 
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -15,12 +34,16 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'tpope/vim-rails.git'
+" Bundle 'tpope/vim-rails.git'
+Bundle 'scrooloose/nerdtree.git'
+Bundle 'scrooloose/nerdcommenter.git'
+Bundle 'majutsushi/tagbar.git'
+Bundle 'hallison/vim-markdown.git'
+Bundle 'kien/ctrlp.vim.git'
 " vim-scripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
+" Bundle 'L9'
 " non github repos
-Bundle 'git://git.wincent.com/command-t.git'
+" Bundle 'git://git.wincent.com/command-t.git'
 " ...
 
 filetype plugin indent on     " required!
