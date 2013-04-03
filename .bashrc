@@ -19,7 +19,7 @@ alias egrep='egrep --color=always'
 alias sshtonny='ssh tonny@www.totodotnet.net'
 
 # Only for mac in office.
-if [ ! -z "`name -n|grep "voyagegroup.local"`" ]; then
+if [ ! -z "`uname -n|grep "voyagegroup.local"`" ]; then
   alias sshdev1='ssh t-xu@g6-dev01.ec2'
   alias sshstaff1='ssh t-xu@g6-staff01.ec2'
   alias sshpre1='ssh t-xu@g6-pre01.ec2'
