@@ -33,6 +33,8 @@ Personal backup for my terminal settings
 
 ## Version
 
+* Ver 0.0.4 - Apr 03, 2013 - Added condition for alias in office, add
+npm path to $PATH
 * Ver 0.0.3 - Apr 01, 2013 - Added powerline for vim
 * Ver 0.0.2 - Apr 01, 2013 - Added vundle support
 * Ver 0.0.1 - Dec 10, 2012 - Initial commit
@@ -40,4 +42,6 @@ Personal backup for my terminal settings
 ## TBD
 
 1. Integrate the Linux/Mac installation script to one.
+  * added `setup.sh` and `setup.rb`. basically, I will use `setup.rb` to
+maintain all the things, but I need some time to learn ruby.
 
