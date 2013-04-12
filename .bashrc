@@ -13,9 +13,10 @@ alias mv='mv -i'
 #alias cp='cp -i'
 alias rm='rm -i'
 alias cd='cd -P'
-alias grep='grep --color=always'
-alias fgrep='fgrep --color=always'
-alias egrep='egrep --color=always'
+# color=always will cause a problem in git completion. color=auto will be fine.
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 alias sshtonny='ssh tonny@www.totodotnet.net'
 
 # Only for mac in office.
