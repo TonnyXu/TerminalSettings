@@ -10,6 +10,8 @@ if [ -d $HOME/.rbenv ]; then
   export GEM_PATH="$(rbenv prefix)"
 fi
 
-PATH=usr/local/Cellar:/usr/local/Cellar/bin:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/bin:$GEM_HOME/bin
-export PATH
+if [ -f '/usr/local/bin/brew' ]; then
+  PATH=usr/local/Cellar:/usr/local/Cellar/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin:$GEM_HOME/bin:$PATH
+  export PATH
+fi
 

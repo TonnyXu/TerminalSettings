@@ -7,7 +7,7 @@
 	branch = true
 	interactive = true
 [core]
-	excludesfile = /users/tonny/.gitignore
+	excludesfile = $HOME/.gitignore
 	pager = less
 	editor = vim
 [alias]

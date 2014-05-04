@@ -10,7 +10,6 @@ source ~/.git-flow-completion.sh
 
 alias ll='ls -lFGhctr'
 alias mv='mv -i'
-#alias cp='cp -i'
 alias rm='rm -i'
 alias cd='cd -P'
 # color=always will cause a problem in git completion. color=auto will be fine.
@@ -19,17 +18,6 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias sshtonny='ssh tonny@www.totodotnet.net'
 
-# Only for mac in office.
-if [ ! -z "`uname -n|grep "voyagegroup.local"`" ]; then
-  alias sshdev1='ssh t-xu@g6-dev01.ec2'
-  alias sshstaff1='ssh t-xu@g6-staff01.ec2'
-  alias sshpre1='ssh t-xu@g6-pre01.ec2'
-  alias sshweb3='ssh t-xu@g6-web03.ec2'
-  alias sshweb4='ssh t-xu@g6-web04.ec2'
-  alias sshweb5='ssh t-xu@g6-web05.ec2'
-  alias sshdevmini1='ssh genesixdev@genesixdev.local'
-  alias sshdevmini2='ssh genesixdev@genesix-macmini.local'
-fi
 
 if [ -z "$PS1" ]; then
   return
@@ -53,5 +41,3 @@ if [ ! -z "which npm" ]; then
   export PATH="/usr/local/share/npm/bin:$PATH"
 fi
 
-# Powerline is good for vim, but not so good for a shell
-#source /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
