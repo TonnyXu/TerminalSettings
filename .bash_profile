@@ -2,8 +2,13 @@ if [ -f ~/.bashrc ]; then
 . ~/.bashrc
 fi
 
-LSCOLORS=gxfxcxdxbxegedabagacad
-export LSCOLORS
+if [ "`uname`" = "Darwin" ]; then
+  LSCOLORS=gxfxcxdxbxegedabagacad
+  export LSCOLORS
+elif [ "`uname`" = "Linux" ]; then
+  LS_COLORS=gxfxcxdxbxegedabagacad
+  export LS_COLORS
+fi
 
 if [ -d $HOME/.rbenv ]; then
   export GEM_HOME="$(rbenv prefix)"
