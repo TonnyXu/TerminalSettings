@@ -11,7 +11,11 @@ export EDITOR="vim"
 source ~/.git-completion.sh
 source ~/.git-flow-completion.sh
 
-alias ll='ls -lFGhctr'
+if [ "`uname`" = "Darwin" ]; then
+  alias ll='ls -lFGhctr'
+elif [ "`uname`" = "Linux" ]; then
+  alias ll='ls -lFGhctr --color'
+fi
 alias mv='mv -i'
 alias rm='rm -i'
 alias cd='cd -P'
