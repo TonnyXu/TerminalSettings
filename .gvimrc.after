@@ -1,2 +1,4 @@
-color DarkBlue
-:set guifont=Monaco:h12
+color dejavu
+:set guifont=Monaco:h14
+:set cursorline
+hi cursorline term=underline cterm=underline guibg=Gray30
