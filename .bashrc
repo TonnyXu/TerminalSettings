@@ -14,7 +14,7 @@ source ~/.git-flow-completion.sh
 if [ "`uname`" = "Darwin" ]; then
   alias ll='ls -lFGhctr'
 elif [ "`uname`" = "Linux" ]; then
-  alias ll='ls -lFGhctr --color'
+  alias ll='ls -lFhctr --color'
 fi
 alias mv='mv -i'
 alias rm='rm -i'
