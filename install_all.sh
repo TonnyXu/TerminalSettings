@@ -1,5 +1,6 @@
 cp ./.git-flow-completion.sh $HOME/
 cp ./.git-completion.sh $HOME/
+cp ./.git-prompt.sh $HOME/
 cp ./.gitconfig $HOME/
 cp ./.gitignore $HOME/
 cp ./.bash_profile $HOME/

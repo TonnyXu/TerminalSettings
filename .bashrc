@@ -9,6 +9,7 @@ export EDITOR="vim"
 
 # This is a Shell AutoCompletion support for git.
 source ~/.git-completion.sh
+source ~/.git-prompt.sh
 source ~/.git-flow-completion.sh
 
 if [ "`uname`" = "Darwin" ]; then
@@ -24,6 +25,7 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias sshtonny='ssh tonny@www.totodotnet.net'
+alias sshLinode='ssh root@45.56.65.71'
 
 
 if [ -z "$PS1" ]; then
