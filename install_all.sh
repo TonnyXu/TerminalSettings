@@ -6,8 +6,8 @@ cp ./.git-completion.sh $HOME/
 cp ./.git-prompt.sh $HOME/
 cp ./.gitconfig $HOME/
 cp ./.gitignore $HOME/
-cp ./.bash_profile $HOME/
 cp ./.bashrc $HOME/
+cp ./.bash_profile $HOME/
 
 if [ "`uname`" = "Linux" ]; then
   cp ./.dircolors $HOME/
@@ -38,7 +38,7 @@ installOrUpdateTool() {
 }
 
 installTool xcode-select "please install Xcode at first"
-installOrUpdateTool brew "brew update" "/usr/bin/ruby -e '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'"
+installOrUpdateTool brew "brew update" "/usr/bin/ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\""
 installOrUpdateTool rbenv "" "brew install rbenv ruby-install"
 installOrUpdateTool pyenv "" "brew install pyenv"
 installOrUpdateTool node "" "brew install node"
