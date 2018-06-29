@@ -42,3 +42,8 @@ installOrUpdateTool brew "brew update" "/usr/bin/ruby -e \"$(curl -fsSL https://
 installOrUpdateTool rbenv "" "brew install rbenv ruby-install"
 installOrUpdateTool pyenv "" "brew install pyenv"
 installOrUpdateTool node "" "brew install node"
+installOrUpdateTool node "" "brew install rename"
+installOrUpdateTool node "" "brew install carthage"
+installOrUpdateTool node "" "brew install tree"
+installOrUpdateTool node "" "brew install vimpager"
+
