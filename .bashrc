@@ -3,6 +3,8 @@ export HISTSIZE=50000
 
 export PAGER="vimpager"
 export EDITOR="vim"
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # This is a Shell AutoCompletion support for git.
 source ~/.git-completion.sh
